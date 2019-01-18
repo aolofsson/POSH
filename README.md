@@ -18,7 +18,8 @@
 
 ## Analog Circuits
 * [USC](https://github.com/USCPOSH/usc-posh)
-* [RAIL-UW](https://github.com/rail-posh)
+* [UW](https://github.com/rail-posh)
+* [PVT Sensors](https://github.com/scale-lab/PVTsensors)
 
 ## OpenPiton
 * [Project Site](http://parallel.princeton.edu/openpiton)
