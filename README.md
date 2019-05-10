@@ -9,7 +9,9 @@
 * [ILA Instruction Level Abstraction](https://github.com/Bo-Yuan-Huang/ILA-Tools)
 
 ## Sandia (Parallel Spice Simulator)
-* [Xyce Parallel Spice Simulator](https://xyce.sandia.gov/)
+* [Xyce Parallel Spice Project Page](https://xyce.sandia.gov/)
+* [Xyce Source Tree](https://github.com/Xyce/Xyce)
+* [Xyce Regression Suite](https://github.com/Xyce/Xyce_Regression)
 
 ## Xilinx (Hybrid Emulation)
 * [SystemC TLM Interfaces](https://github.com/Xilinx/libsystemctlm-soc)
@@ -34,7 +36,6 @@
 * [AMS Assertions](https://github.com/POSH-Emulation/AMS-assertions)
 * [SPice to RNN Conversion](https://github.com/POSH-Emulation/SPICE-conversion)
 * [RNM Emulatio](https://github.com/POSH-Emulation/RNM-emulation)
-
 
 ## University of Washington (RISC-V)
 * [Black Parrot](https://github.com/black-parrot/pre-alpha-release)
