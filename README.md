@@ -7,6 +7,8 @@
 * [AXI Protocol Checker](https://github.com/upscale-project/case-studies/tree/master/axi)
 * [Serial Link Mixed Signal Modeling](https://github.com/upscale-project/hslink_phy)
 * [ILA Instruction Level Abstraction](https://github.com/Bo-Yuan-Huang/ILA-Tools)
+* [FPGA emulation of mixed-signal systems](https://github.com/sgherbst/anasymod)
+* [Digital Analog Design](https://github.com/StanfordVLSI/DaVE)
 
 ## Sandia (Parallel Spice Simulator)
 * [Xyce Parallel Spice Project Page](https://xyce.sandia.gov/)
@@ -32,18 +34,12 @@
 ## Brown (Open Source PVT Sensors)
 * [PVT Sensors](https://github.com/scale-lab/PVTsensors)
 
-## Synopsys (Mixed Signal Emulation)
-* [AMS Assertions](https://github.com/POSH-Emulation/AMS-assertions)
-* [SPice to RNN Conversion](https://github.com/POSH-Emulation/SPICE-conversion)
-* [RNM Emulatio](https://github.com/POSH-Emulation/RNM-emulation)
-
 ## University of Washington (RISC-V)
 * [Black Parrot](https://github.com/black-parrot/pre-alpha-release)
 
 ## LeWiz (Ethernet Controller)
 * [1G/100M/10M Ethernet](https://github.com/lewiz-support/LMAC_CORE1)
 * [10G/5G/2.5G/1G](https://github.com/lewiz-support/LMAC_CORE2)
-
 
 ## Dependancies
 * [Boolector](https://github.com/Boolector)
