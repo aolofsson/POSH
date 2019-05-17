@@ -29,10 +29,16 @@
 * [OpenFPGA](https://github.com/LNIS-Projects/OpenFPGA)
 
 ## USC (Open Source High Performance Analog Circuits)
-* [USC](https://github.com/USCPOSH/usc-posh)
+* [USC AMS Known Good Designs](https://github.com/USCPOSH/AMS_KGD)
+* [Circuit Generation from KGD](https://github.com/USCPOSH/usc-posh)
+* [Circuit IP Sanitizer](https://github.com/USCPOSH/Sanitizer)
+* [Analog Parameter Search Engine](https://github.com/USCPOSH/AMPSE)
 
 ## Brown (Open Source PVT Sensors)
 * [PVT Sensors](https://github.com/scale-lab/PVTsensors)
+
+## University of Washington (Process Independent Design)
+* [UW AMS KNown Good Designs](https://github.com/uwidea/UW-IDEA_AnalogTestCases)
 
 ## University of Washington (RISC-V)
 * [Black Parrot](https://github.com/black-parrot/pre-alpha-release)
@@ -40,7 +46,4 @@
 ## LeWiz (Ethernet Controller)
 * [1G/100M/10M Ethernet](https://github.com/lewiz-support/LMAC_CORE1)
 * [10G/5G/2.5G/1G](https://github.com/lewiz-support/LMAC_CORE2)
-
-## Dependancies
-* [Boolector](https://github.com/Boolector)
 
