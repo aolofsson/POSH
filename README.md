@@ -29,7 +29,7 @@
 * [OpenFPGA](https://github.com/LNIS-Projects/OpenFPGA)
 
 ## USC (Open Source High Performance Analog Circuits)
-* [USC AMS Known Good Designs](https://github.com/USCPOSH/AMS_KGD)
+* [Analog Known Good Designs](https://github.com/USCPOSH/AMS_KGD)
 * [Circuit Generation from KGD](https://github.com/USCPOSH/usc-posh)
 * [Circuit IP Sanitizer](https://github.com/USCPOSH/Sanitizer)
 * [Analog Parameter Search Engine](https://github.com/USCPOSH/AMPSE)
@@ -38,7 +38,9 @@
 * [PVT Sensors](https://github.com/scale-lab/PVTsensors)
 
 ## University of Washington (Process Independent Design)
-* [UW AMS KNown Good Designs](https://github.com/uwidea/UW-IDEA_AnalogTestCases)
+* [Analog Kown Good Designs](https://github.com/uwidea/UW-IDEA_AnalogTestCases)
+* [65nm RAIL Library](https://github.com/rail-posh/rail65)
+* [12nm RAIL library](https://github.com/rail-posh/rail12)
 
 ## University of Washington (RISC-V)
 * [Black Parrot](https://github.com/black-parrot/pre-alpha-release)
