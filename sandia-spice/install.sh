@@ -4,20 +4,30 @@
 # References:
 #
 # https://xyce.sandia.gov/documentation/BuildingGuide.html
+# https://github.com/Xyce/Xyce
 #
 ###########################################################################
 
-#Dependancies
-sudo apt-get install gfortran bison flex libfl-dev libfftw3-dev libsuitesparse-dev libsuitesparse-doc libblas-dev liblapack-dev libtool libopenmpi-dev openmpi-bin libtrilinos-teuchos-dev
+###########################################################################
+#Install Dependancies
+###########################################################################
+
+sudo apt-get install gfortran bison flex libfl-dev libtool
+sudo apt-get install libfftw3-dev libsuitesparse-dev libblas-dev liblapack-dev
+sudo apt-get install libopenmpi-dev openmpi-bin
 
 ###########################################################################
 #Install Trilinos from source
+###########################################################################
+
 wget https://github.com/trilinos/Trilinos/archive/trilinos-release-12-12-1.tar.gz 
 tar zxvf trilinos-release-12-12-1.tar.gz
-mkdir -p XyceLibs/Serial
+
 SRCDIR=$PWD/Trilinos-trilinos-release-12-12-1
-ARCHDIR=$PWD/XyceLibs/Serial
+LIBDIR=/opt/xyce/xyce_lib
+INSTALLDIR=/opt/xyce/xyce_serial
 FLAGS="-O3 -fPIC"
+
 cmake \
 -G "Unix Makefiles" \
 -DCMAKE_C_COMPILER=gcc \
@@ -26,7 +36,7 @@ cmake \
 -DCMAKE_CXX_FLAGS="$FLAGS" \
 -DCMAKE_C_FLAGS="$FLAGS" \
 -DCMAKE_Fortran_FLAGS="$FLAGS" \
--DCMAKE_INSTALL_PREFIX=$ARCHDIR \
+-DCMAKE_INSTALL_PREFIX=$LIBDIR \
 -DCMAKE_MAKE_PROGRAM="make" \
 -DTrilinos_ENABLE_NOX=ON \
 -DNOX_ENABLE_LOCA=ON \
@@ -56,9 +66,12 @@ $SRCDIR
 
 make
 
+sudo mkdir -p $LIBDIR
 sudo make install
 
-##############################################################################
+###########################################################################
+#Install Xyce from Source
+###########################################################################
 
 #Clone Xyce
 git clone git@github.com:Xyce/Xyce.git
@@ -66,5 +79,11 @@ git clone git@github.com:Xyce/Xyce.git
 #Build Xyce
 cd Xyce
 ./bootstrap
-cd ../
-./configure CXXFLAGS="-O3 -std=c++11" ARCHDIR="/home/aolofsson/work/darpa/POSH/sandia-spice/Serial" CPPFLAGS="-I/usr/include/suitesparse"
+./configure CXXFLAGS="-O3 -std=c++11" ARCHDIR=$LIBDIR --prefix=$INSTALLDIR CPPFLAGS="-I/usr/include/suitesparse"
+make
+sudo mkdir -p $INSTALLDIR
+sudo make install
+
+#Test installation
+$INSTALLDIR/bin/Xyce
+
